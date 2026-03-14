@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">ShopEase</a>
+      <nav class="nav" id="nav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#featured">Featured</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-wrapper">
+          <input id="searchInput" class="search" type="search" placeholder="Search products..." />
+          <button id="searchBtn" class="btn icon-btn" aria-label="Search">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </div>
+        <a class="cart-btn" href="cart.html" aria-label="View cart">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="cartSection">
+      <div class="container">
+        <div class="section-header">
+          <h1>Your Cart</h1>
+          <p>Review your selected items before checkout.</p>
+        </div>
+        <div class="cart-content">
+          <div class="cart-items" id="cartItems"></div>
+          <aside class="cart-summary">
+            <h2>Order summary</h2>
+            <div class="summary-row">
+              <span>Items</span>
+              <span id="summaryCount">0</span>
+            </div>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="summarySub">$0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span id="summaryShipping">$5.00</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="summaryTotal">$0.00</span>
+            </div>
+            <button class="btn primary" id="checkoutBtn">Proceed to Checkout</button>
+            <p class="cart-note" id="cartNote"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>ShopEase</h3>
+        <p>Your destination for curated collections and effortless shopping.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><span class="material-symbols-outlined">facebook</span></a>
+          <a href="#" aria-label="Twitter"><span class="material-symbols-outlined">twitter</span></a>
+          <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">instagram</span></a>
+          <a href="#" aria-label="Pinterest"><span class="material-symbols-outlined">pinterest</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="year"></span> ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
